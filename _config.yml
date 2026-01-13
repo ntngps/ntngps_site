@@ -3,7 +3,7 @@ title:               Nadeem Persico-Shammas
 tagline:             'ntngps'
 description:         'Portfolio'
 url:                 https://ntngps.com
-baseurl:             ''
+baseurl:             'https://ntngps.com'
 paginate:            5
 permalink:           pretty
 paginate_path:       '/page:num'
