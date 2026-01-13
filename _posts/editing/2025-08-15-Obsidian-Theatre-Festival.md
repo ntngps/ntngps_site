@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Obsidian Theatre Festival"
-tag: editing
+tags: editor color
 ---
 *editor, colorist*
 

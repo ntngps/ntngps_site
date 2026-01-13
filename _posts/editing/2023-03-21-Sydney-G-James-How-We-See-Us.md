@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sydney G. James: How We See Us"
-tags: editing editor sound
+tags: editor sound
 ---
 *editor, post-sound mixer*
 

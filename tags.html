@@ -1,14 +1,37 @@
 ---
 layout: page
 title: Tags
+permalink: /tags/
 ---
-<h1>Tags</h1>
 
-<ul>
-  {% for tag in site.tags %}
-    <li>
-      <h2>{{ tag.name }}</h2>
-      <p>{{ tag.content | markdownify }}</p>
-    </li>
+{% assign sorted_tags = site.tags | sort %}
+
+<div class="tag-cloud" style="margin-bottom: 2rem;">
+  <!-- <strong>All Tags:</strong> -->
+  {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    <a href="#{{ tag_name | slugify }}" style="margin-right: 10px; text-decoration: underline;">
+      {{ tag_name | capitalize }}
+    </a>
   {% endfor %}
-</ul>
+</div>
+
+<hr>
+
+<div class="archive">
+  {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign posts = tag[1] %}
+    
+    <h2 id="{{ tag_name | slugify }}">{{ tag_name | capitalize }}</h2>
+    
+    <ul>
+      {% for post in posts %}
+        <li>
+          <span class="post-date" style="display: inline;">{{ post.date | date: "%b %d, %Y" }}</span> - 
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

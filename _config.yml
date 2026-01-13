@@ -21,9 +21,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   
-collections:
-  tags:
-    output: true
+#collections:
+# tags:
+#  output: true
 
 # Custom vars
 # version:             1.1.0

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Made A Universe"
-tags: editing editor sound
+tags: editor sound
 ---
 *asst. editor, post-sound mixer*
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Until It Feels Like Worship"
-tags: editing editor color
+tags: editor color
 ---
 *editor, colorist*
 

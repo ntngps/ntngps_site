@@ -1,0 +1,24 @@
+---
+layout: page
+title: Photography
+permalink: /photography/
+---
+
+<div class="archive">
+ <!-- <h2>Photography Posts</h2> -->
+  <ul>
+    {% for post in site.posts %}
+      {% assign path_parts = post.path | split: '/' %}
+      
+      {% comment %}
+        Check if the folder name (index 1) is strictly "photography"
+      {% endcomment %}
+      {% if path_parts.size >= 3 and path_parts[1] == 'photography' %}
+        <li>
+          <span class="post-date" style="display: inline;">{{ post.date | date: "%b %d, %Y" }}</span> - 
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

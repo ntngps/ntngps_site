@@ -7,5 +7,5 @@ title: About
 
 Nadeem Persico-Shammas is a writer, editor, and all-around video professional based in Detroit, Michigan. That's me!
 
-Find me on[Instagram.](https://www.instagram.com/ntngps/) and less frequently on [Bluesky](https://bsky.app/profile/ntngps.com).
+Find me on [Instagram](https://www.instagram.com/ntngps/) and less frequently on [Bluesky](https://bsky.app/profile/ntngps.com).
 But the best way to get in touch is email: nadeem at ntngps dot com

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Detroit We Dey"
-tags: editing sound
+tags: sound
 ---
 *post-sound mixer*
 

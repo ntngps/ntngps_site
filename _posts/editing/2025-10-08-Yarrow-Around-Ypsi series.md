@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Yarrow - Around Ypsi"
-tags: editing editor sound color
+tags: editor sound color
 excerpt_separator: <!--more-->
 ---
 

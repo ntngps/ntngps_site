@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Underneath the Witness"
-tag: editing
 ---
 
 a video essay series closely reading Thekla, Inc’s 2016 video game *The Witness*.

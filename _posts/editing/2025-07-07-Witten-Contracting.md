@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Witten Contracting"
-tags: editing editor color sound
+tags: editor color sound
 ---
 *editor, colorist, post-sound mixer*
 
