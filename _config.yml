@@ -2,8 +2,8 @@
 title:               Nadeem Persico-Shammas
 tagline:             'ntngps'
 description:         'Portfolio'
-url:                 "https://ntngps.com"
-baseurl:             ""
+url:                 'https://ntngps.com'
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 paginate_path:       '/page:num'
