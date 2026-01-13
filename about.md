@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 
+title: About
 ---
 
 ![about](/assets/images/DSCF1817.jpg)
 
-is a writer, editor, and all-around video professional based in Detroit, Michigan. That's me!
+Nadeem Persico-Shammas is a writer, editor, and all-around video professional based in Detroit, Michigan. That's me!
 
 You can browse my portfolio in the site menu. My latest work is the short film [Until It Feels Like Worship]({% post_url 2025-11-21-Until-It-Feels-Like-Worship %}).
 
