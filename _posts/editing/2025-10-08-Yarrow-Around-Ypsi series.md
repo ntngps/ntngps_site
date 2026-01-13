@@ -16,6 +16,7 @@ Around Ypsi is a feature series for Yarrow, a real estate company in Ypsilanti M
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rcocgh7XyUw?si=ZkcYR8CfoZz0u8HF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!--more-->
+\n\n
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9pJJAjbOSWs?si=ILwrhoI37EmZ7_7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
