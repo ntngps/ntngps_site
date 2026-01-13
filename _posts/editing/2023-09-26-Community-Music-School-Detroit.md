@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Community Music School Detroit"
-tag: editing
+tags: editing editor color sound
 ---
 *editor, colorist, post-sound mixer*
 

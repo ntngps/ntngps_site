@@ -7,8 +7,5 @@ title: About
 
 Nadeem Persico-Shammas is a writer, editor, and all-around video professional based in Detroit, Michigan. That's me!
 
-You can browse my portfolio in the site menu. My latest work is the short film [Until It Feels Like Worship]({% post_url 2025-11-21-Until-It-Feels-Like-Worship %}).
-
-Find me on [Bluesky](https://bsky.app/profile/ntngps.com) and [Instagram.](https://www.instagram.com/ntngps/)
-But the best way to get in touch is
-Email: nadeem at ntngps dot com
+Find me on[Instagram.](https://www.instagram.com/ntngps/) and less frequently on [Bluesky](https://bsky.app/profile/ntngps.com).
+But the best way to get in touch is email: nadeem at ntngps dot com
