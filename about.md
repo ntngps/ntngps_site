@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![/assets/images/DSCF1817.jpg]
+![about](/assets/images/DSCF1817.jpg)
 
 is a writer, editor, and all-around video professional based in Detroit, Michigan. That's me!
 

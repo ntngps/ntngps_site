@@ -10,6 +10,6 @@ tag: editing
 
 The film is currently making the festival rounds; a screener is available [upon request](mailto:nadeem@ntngps.com).
 
-![[UIFLW_promo-still_01.jpg]]
+![uiflw1](/assets/images/UIFLW_promo-still_01.jpg)
 
-![[UIFLW_promo-still_02.jpg]]
+![uiflw2](/assets/images/UIFLW_promo-still_02.jpg)
