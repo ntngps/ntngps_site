@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 
 ---
 
 ![about](/assets/images/DSCF1817.jpg)
