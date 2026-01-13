@@ -3,27 +3,12 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+![/assets/images/DSCF1817.jpg]
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+is a writer, editor, and all-around video professional based in Detroit, Michigan. That's me!
 
-There are currently two themes built on Poole:
+You can browse my portfolio in the site menu. My latest work is the short film [[Until It Feels Like Worship]], and you can read what I'm up to right [[Now|now.]]
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Find me on [Bluesky](https://bsky.app/profile/ntngps.com) and [Instagram.](https://www.instagram.com/ntngps/)
+But the best way to get in touch is
+Email: nadeem at ntngps dot com
