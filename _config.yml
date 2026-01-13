@@ -1,4 +1,4 @@
-# Setup http://lanyon.getpoole.com
+# Setup
 title:               Nadeem Persico-Shammas
 tagline:             'ntngps'
 description:         'Under construction!'
@@ -7,7 +7,7 @@ baseurl:             ''
 paginate:            5
 permalink:           pretty
 paginate_path:       '/page:num'
-excerpt_separator:   "\n\n"
+
 
 # About/contact
 author:
