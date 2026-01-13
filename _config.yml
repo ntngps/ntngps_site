@@ -1,7 +1,7 @@
 # Setup http://lanyon.getpoole.com
-title:               ntngps
-tagline:             ''
-description:         'Nadeem Persico-Shammas'
+title:               Nadeem Persico-Shammas
+tagline:             'ntngps'
+description:         'Portfolio'
 url:                 https://ntngps-site.pages.dev/
 baseurl:             ''
 paginate:            5
