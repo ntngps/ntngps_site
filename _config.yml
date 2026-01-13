@@ -1,8 +1,8 @@
-# Setup
+# Setup http://lanyon.getpoole.com
 title:               ntngps
 tagline:             ''
 description:         'Nadeem Persico-Shammas'
-url:                 http://lanyon.getpoole.com
+url:                 https://www.ntngps.com
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -19,6 +19,10 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
+  
+collections:
+  tags:
+    output: true
 
 # Custom vars
 # version:             1.1.0

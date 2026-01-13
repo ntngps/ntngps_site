@@ -1,0 +1,14 @@
+---
+layout: page
+title: Tags
+---
+<h1>Tags</h1>
+
+<ul>
+  {% for tag in site.tags %}
+    <li>
+      <h2>{{ tag.name }}</h2>
+      <p>{{ tag.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
