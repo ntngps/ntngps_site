@@ -187,8 +187,9 @@ code {
   color: var(--lanyon-masthead-title-color);
 }
 .masthead-title small {
-  font-size: 75%;
+  font-size: 50%;
   font-weight: 400;
+  margin-left: 1rem;
   color: var(--lanyon-text-color);
   letter-spacing: 0;
 }
@@ -241,7 +242,7 @@ code {
 
 /* Sidebar content */
 .sidebar a {
-  font-weight: normal;
+  font-weight: bold;
   color: var(--lanyon-sidebar-text);
 }
 .sidebar-item {
@@ -610,6 +611,18 @@ a.pagination-item:hover {
 .theme-base-0f .sidebar-toggle,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/* Felxoki Blue 600 */
+.theme-base-1f .sidebar,
+.theme-base-1f .sidebar-toggle:active,
+.theme-base-1f #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #205EA6;
+}
+.theme-base-1f .container a,
+.theme-base-1f .sidebar-toggle,
+.theme-base-1f .related-posts li a:hover {
+  color: #205EA6;
 }
 
 /*
