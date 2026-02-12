@@ -7,7 +7,9 @@ excerpt_separator: <!--more-->
 
 *editor, colorist, post-sound mixer*
 
-Around Ypsi is a feature series for Yarrow, a real estate company in Ypsilanti MI, highlighting and celebrating local businesses and Ypsi culture.
+Around Ypsi is a feature series for [Yarrow](https://www.liveyarrow.com), a real estate company in Ypsilanti MI, highlighting and celebrating local businesses and Ypsi culture.
+
+My social media video work for Yarrow is available to watch on their [Facebook page](https://www.facebook.com/liveyarrow).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nURvgqqj7Ro?si=0XEsnS-x3usfbMZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
