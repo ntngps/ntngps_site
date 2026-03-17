@@ -3,6 +3,7 @@ title:               Nadeem Persico-Shammas
 tagline:             'portfolio and blog'
 description:         'ntngps'
 url:                 'https://ntngps.com'
+timezone:            America/Detroit
 baseurl:             ''
 paginate:            5
 permalink:           pretty
