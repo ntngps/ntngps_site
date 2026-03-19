@@ -11,8 +11,6 @@ Around Ypsi is a feature series for [Yarrow](https://www.liveyarrow.com/aroundyp
 
 My social media video work for Yarrow is available to watch on their [Facebook page](https://www.facebook.com/liveyarrow).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0Px70aey5XA?si=4rL8WvZhwLOVXrmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nURvgqqj7Ro?si=0XEsnS-x3usfbMZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rgW7l7qlU1o?si=5MZT9xhketU4qXAR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
