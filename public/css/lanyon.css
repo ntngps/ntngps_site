@@ -102,11 +102,11 @@ body {
 }
 
 html {
-  font-family: "Charter", Georgia, "Times New Roman", serif;
+  font-family: "Charter", "Palatino", "Palatino Linotype", Georgia, "Times New Roman", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Charter", Georgia, "PT Sans", Helvetica, sans-serif;
+  font-family: "Charter", "Palatino", "Palatino Linotype", Georgia, "PT Sans", Helvetica, sans-serif;
   font-weight: 400;
   color: var(--lanyon-heading-color);
   letter-spacing: -.025rem;
@@ -227,7 +227,7 @@ code {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "Charter", "PT Sans", Helvetica, sans-serif;
+  font-family: "Charter", "Palatino", "Palatino Linotype", "PT Sans", Helvetica, sans-serif;
   font-size: .875rem; /* 15px */
   color: var(--lanyon-sidebar-text);
   background-color: var(--lanyon-sidebar-bg);
