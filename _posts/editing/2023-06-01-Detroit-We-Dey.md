@@ -10,3 +10,7 @@ tags: sound
 Detroit We Dey is a short documentary exploring the dancehall culture and community of Nigerian immigrants in Detroit.
 
 Produced for HOMEGROWN: Future Visions short film initiative for PBS.
+
+*@ Cleveland International Film Festival '23*
+
+*@ FREEP Film Festival '23*

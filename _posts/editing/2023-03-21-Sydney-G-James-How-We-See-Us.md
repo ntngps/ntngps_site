@@ -11,7 +11,14 @@ Filmmaker Juanita Anderson follows visual artist Sydney G. James, whose bold bru
 
 Produced for Firelight Media and American Masters for PBS.
 
-"Best Documentary Short" @ Reel Sisters Film Festival '23
-"Hometown Talent Award" @ Freep Film Festival '23
-@ Big Sky Film Festival '23
-@ Pan African Film Festival '23
+"Best Documentary Short" *@ Reel Sisters Film Festival '23*
+
+"Hometown Talent Award" *@ FREEP Film Festival '23*
+
+Silver award, Online Documentary - Short Form *@ Telly Awards '24*
+
+*@ Big Sky Documentary Film Festival '23*
+
+*@ Pan African Film Festival '23*
+
+*@ Black Star Film Festival '23*
