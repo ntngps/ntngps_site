@@ -22,3 +22,5 @@ Take the sentence they cited, “As well ask men what they think of stone," whic
 I like the LLM's focus on human indifference, and we can see that it knew to eschew the quote marks and vary the sentence length, but the lines themselves are too correct. Anyone competent could have written what Claude Opus produced; only McCarthy could have written *Blood Meridian*.
 
 Not every human writer can write truly outstanding prose, but only humans are (currently) capable of writing prose that plays with itself. Good prose isn't just the sum of "worldly experiences". It's musical, rhythmic, and above all, playful. This LLM experiment ingested good prose and shit out polished turds designed to go down smooth, to be inoffensive to its consumers.
+
+*See also the video essay [If I Told It: An Imperfect Portrait of ChatGPT](https://www.youtube.com/watch?v=V5wLQ-8eyQI)*
