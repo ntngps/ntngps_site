@@ -234,6 +234,12 @@ img {
   border-radius: 5px;
 }
 
+iframe {
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
