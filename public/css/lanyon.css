@@ -410,6 +410,44 @@ a.sidebar-nav-item:focus {
   color: var(--lanyon-text-color);
 }
 
+/* Post navigation */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--lanyon-border-color);
+}
+.post-nav a {
+  display: flex;
+  flex-direction: column;
+  max-width: 48%;
+  text-decoration: none;
+  color: var(--lanyon-text-color);
+}
+.post-nav a:hover {
+  color: var(--lanyon-link-hover-color);
+  text-decoration: none;
+}
+.post-nav-prev {
+  align-items: flex-start;
+}
+.post-nav-next {
+  align-items: flex-end;
+  margin-left: auto;
+}
+.post-nav-label {
+  font-size: .75rem;
+  color: var(--lanyon-text-color);
+  opacity: 0.6;
+  margin-bottom: .25rem;
+}
+.post-nav-title {
+  font-size: .9rem;
+  line-height: 1.3;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;

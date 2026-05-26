@@ -12,6 +12,7 @@ The New York Times' recent quizlet "[Who’s a Better Writer: A.I. or Humans?](h
 > A.I. used to make mistakes like these. But today’s systems are much more fluid than their predecessors — so fluid, in fact, that finding grammatical errors or nonstandard syntax is often a hint that you’re looking at a human’s prose, not a machine’s.
 
 Creative choices in prose are not "mistakes". "Clunky phrases" are a feature, not a bug. Writers play with language to create a characteristic voice that evokes an image or emotion in the mind of the reader; it's not all about clarity and information. Here's the full McCarthy quote, followed by the Claude Opus imitation:
+<!--more-->
 
 > It makes no difference what men think of war, said the judge. War endures. As well ask men what they think of stone. War was always here. Before man was, war waited for him. The ultimate trade awaiting its ultimate practitioner. That is the way it was and will be.
 
