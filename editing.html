@@ -4,21 +4,41 @@ title: Editing
 permalink: /editing/
 ---
 
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="editor">Editor</button>
+  <button class="filter-btn" data-filter="color">Colorist</button>
+  <button class="filter-btn" data-filter="sound">Sound</button>
+</div>
+
 <div class="archive">
-<!--  <h2>Editing Posts</h2> -->
-  <ul>
+  <ul id="editing-list">
     {% for post in site.posts %}
       {% assign path_parts = post.path | split: '/' %}
-      
-      {% comment %}
-        Check if the folder name (index 1) is strictly "editing"
-      {% endcomment %}
       {% if path_parts.size >= 3 and path_parts[1] == 'editing' %}
-        <li>
-          <span class="post-date" style="display: inline;">{{ post.date | date: "%b %d, %Y" }}</span> - 
+        <li data-tags="{{ post.tags | join: ' ' }}">
+          <span class="post-date" style="display: inline;">{{ post.date | date: "%b %d, %Y" }}</span> -
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </li>
       {% endif %}
     {% endfor %}
   </ul>
 </div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.filter-btn');
+  var items = document.querySelectorAll('#editing-list li');
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = this.dataset.filter;
+      buttons.forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      items.forEach(function (item) {
+        item.hidden = filter !== 'all' && !item.dataset.tags.split(' ').includes(filter);
+      });
+    });
+  });
+})();
+</script>
