@@ -5,6 +5,8 @@
 
   <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
@@ -12,10 +14,10 @@
     <div class="wrap">
       <div class="masthead">
         <div class="container">
-          <h3 class="masthead-title">
+          <p class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
-          </h3>
+          </p>
           <div id="search-wrapper">
             <input type="search" id="search-input" placeholder="Search…" autocomplete="off" aria-label="Search posts">
             <ul id="search-results" hidden></ul>
@@ -23,12 +25,12 @@
         </div>
       </div>
 
-      <div class="container content">
+      <main id="main-content" class="container content">
         {{ content }}
-      </div>
+      </main>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <label for="sidebar-checkbox" class="sidebar-toggle" aria-label="Toggle navigation"></label>
 
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
     <script src='{{ site.baseurl }}/public/js/search.js'></script>

@@ -181,6 +181,9 @@ code {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.25;
   color: var(--lanyon-masthead-title-color);
 }
 .masthead-title a {
@@ -201,6 +204,23 @@ code {
   .masthead-title small {
     display: none;
   }
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  z-index: 9999;
+  padding: .5rem 1rem;
+  background: var(--lanyon-bg-color);
+  color: var(--lanyon-link-color);
+  text-decoration: underline;
+  font-size: 1rem;
+  border: 1px solid var(--lanyon-border-color);
+}
+.skip-link:focus {
+  top: 0;
 }
 
 /* Search */
@@ -225,13 +245,18 @@ code {
   border-radius: 3px;
   background: var(--lanyon-bg-color);
   color: var(--lanyon-text-color);
-  outline: none;
   transition: border-color .15s, width .2s;
 }
 
 #search-input:focus {
   border-color: var(--lanyon-link-color);
   width: 12rem;
+  outline: none;
+}
+
+#search-input:focus-visible {
+  outline: 2px solid var(--lanyon-link-color);
+  outline-offset: 2px;
 }
 
 #search-results {
@@ -294,6 +319,7 @@ code {
   }
   #search-input {
     width: 12rem;
+    font-size: 1rem; /* prevents iOS Safari auto-zoom on inputs below 16px */
   }
   #search-input:focus {
     width: 14rem;
@@ -819,4 +845,17 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .wrap,
+  .sidebar,
+  .sidebar-toggle {
+    -webkit-transition: none;
+            transition: none;
+  }
+  #search-input {
+    transition: none;
+  }
 }

@@ -16,7 +16,11 @@ permalink: /words/
       {% if path_parts.size >= 3 and path_parts[1] == 'words' %}
         <li>
           <span class="post-date" style="display: inline;">{{ post.date | date: "%b %d, %Y" }}</span> - 
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% if post.external_url %}
+            <a href="{{ post.external_url }}">{{ post.title }}</a> <a href="{{ post.url | relative_url }}" title="Permalink">&#8776;</a>
+          {% else %}
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% endif %}
         </li>
       {% endif %}
     {% endfor %}

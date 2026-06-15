@@ -20,7 +20,7 @@
 
     results.innerHTML = matches.length
       ? matches.map(function (p) {
-          return '<li><a href="' + p.url + '">' +
+          return '<li><a href="' + (p.external_url || p.url) + '">' +
             '<span class="search-result-title">' + p.title + '</span>' +
             '<span class="search-result-date">' + p.date + '</span>' +
             '</a></li>';

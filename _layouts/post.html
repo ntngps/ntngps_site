@@ -3,8 +3,14 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <h1 class="post-title">
+    {% if page.external_url %}
+      <a href="{{ page.external_url }}">{{ page.title }}</a>
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>{% if page.external_url %} <a class="post-permalink" href="{{ page.url | absolute_url }}" title="Permalink">&#8776;</a>{% endif %}
   {{ content }}
   {% if page.tags.size > 0 %}
   <div class="post-tags" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
