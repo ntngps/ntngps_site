@@ -35,7 +35,7 @@
 
 :root {
   /* Light mode colors */
-  --lanyon-bg-color: #fff;
+  --lanyon-bg-color: #ebebeb;
   --lanyon-text-color: #515151;
   --lanyon-heading-color: #313131;
   --lanyon-link-color: #268bd2;
@@ -55,7 +55,7 @@
   --lanyon-masthead-title-hover: #000;
   
   /* Toggle colors - light mode */
-  --lanyon-toggle-bg: #fff;
+  --lanyon-toggle-bg: #ebebeb;
   --lanyon-toggle-border: #e5e5e5;
   --lanyon-toggle-active: #555;
 }
