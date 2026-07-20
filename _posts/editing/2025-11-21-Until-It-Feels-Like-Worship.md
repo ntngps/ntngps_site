@@ -10,9 +10,9 @@ tags: editor color
 
 The film is currently making the festival rounds; a screener is available [upon request](mailto:nadeem@ntngps.com).
 
-@ Brooklyn Film Festival '26
+*@ Brooklyn Film Festival '26*
 
-@ Detroit Trinity International Film Festival '26
+"Visionary Storytelling Award" *@ Detroit Trinity International Film Festival '26*
 
 ![uiflw1](/assets/images/UIFLW_promo-still_01.jpg)
 
