@@ -2,7 +2,7 @@
 layout: post
 title: "Stop Listening To Music"
 external_url: "https://www.hearingthings.co/stop-listening-to-music/"
-date: 2026-07-31 15:04:00
+date: 2026-07-31 15:04:00 -0400
 published: true
 ---
 Andy Cush, at Hearing Things:
