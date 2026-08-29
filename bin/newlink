@@ -1,0 +1,128 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# newlink — scaffold a Daring Fireball-style link post in _posts/words/
+#
+#   bin/newlink                                   # prompts for link + title
+#   bin/newlink "https://example.com" "A Title"   # non-interactive
+#   bin/newlink --draft                           # published: false
+#   bin/newlink --open                            # open the new file in BBEdit
+#
+# Writes _posts/words/YYYY-MM-DD-slug.md with the front matter filled in and
+# leaves the cursor spot for commentary. Dates use the site's configured
+# timezone, so the UTC offset follows daylight saving.
+
+require 'time'
+
+SITE_ROOT = File.expand_path('..', __dir__)
+POSTS_DIR = File.join(SITE_ROOT, '_posts', 'words')
+
+def die(msg)
+  warn "newlink: #{msg}"
+  exit 1
+end
+
+def usage
+  puts <<~TEXT
+    Usage: bin/newlink [options] [url] [title]
+
+    Options:
+      --draft    set published: false (default is true)
+      --open     open the new post in BBEdit
+      -h, --help show this message
+  TEXT
+  exit 0
+end
+
+# The site timezone decides whether the date stamp gets -0400 or -0500.
+def site_timezone
+  config = File.join(SITE_ROOT, '_config.yml')
+  return nil unless File.exist?(config)
+
+  File.read(config)[/^timezone:\s*(\S+)/, 1]
+end
+
+# Ask, showing a default in brackets that a bare Enter accepts.
+def ask(prompt, default: nil)
+  loop do
+    print default ? "#{prompt} [#{default}]: " : "#{prompt}: "
+    answer = $stdin.gets
+    if answer.nil? # ^D, or stdin isn't a terminal
+      puts
+      return default if default
+
+      die 'aborted'
+    end
+    answer = answer.strip
+    return answer unless answer.empty?
+    return default if default
+
+    puts '  (required)'
+  end
+end
+
+def slugify(title)
+  title.downcase
+       .gsub(/[’']/, '')            # don't let apostrophes become hyphens
+       .gsub(/[^a-z0-9]+/, '-')
+       .gsub(/\A-+|-+\z/, '')
+end
+
+# YAML double-quoted scalars need backslashes and quotes escaped.
+def yaml_quote(str)
+  %("#{str.gsub('\\', '\\\\\\\\').gsub('"', '\"')}")
+end
+
+draft = false
+open_after = false
+args = []
+
+ARGV.each do |arg|
+  case arg
+  when '--draft'         then draft = true
+  when '--open'          then open_after = true
+  when '-h', '--help'    then usage
+  when /\A-/             then die "unknown option: #{arg}"
+  else args << arg
+  end
+end
+
+die "no such directory: #{POSTS_DIR}" unless Dir.exist?(POSTS_DIR)
+
+url   = args[0] || ask('Link URL')
+title = args[1] || ask('Post title')
+
+url = "https://#{url}" unless url.match?(%r{\A[a-z][a-z0-9+.-]*://}i)
+
+ENV['TZ'] = site_timezone || ENV['TZ']
+now = Time.now
+
+slug = ask('Filename slug', default: slugify(title))
+slug = slugify(slug)
+die 'slug is empty — give me one made of letters or numbers' if slug.empty?
+
+path = File.join(POSTS_DIR, "#{now.strftime('%Y-%m-%d')}-#{slug}.md")
+if File.exist?(path)
+  answer = ask("#{File.basename(path)} exists. Overwrite? (y/N)", default: 'N')
+  die 'aborted' unless answer.downcase.start_with?('y')
+end
+
+File.write(path, <<~POST)
+  ---
+  layout: post
+  title: #{yaml_quote(title)}
+  external_url: #{yaml_quote(url)}
+  date: #{now.strftime('%Y-%m-%d %H:%M:%S %z')}
+  published: #{draft ? 'false' : 'true'}
+  ---
+POST
+
+puts "Created #{path.sub("#{SITE_ROOT}/", '')}"
+
+if open_after
+  if system('which', 'bbedit', out: File::NULL, err: File::NULL)
+    system('bbedit', path)
+  else
+    system('open', '-a', 'BBEdit', path)
+  end
+end
