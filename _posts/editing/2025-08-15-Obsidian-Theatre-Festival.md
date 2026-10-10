@@ -10,7 +10,7 @@ Launched in March 2021, the Obsidian Theatre Festival is a celebration of Black 
 I've worked as their video editor every year since the beginning, and it's incredibly gratifying to bring these fresh stories to the world. You can watch two of my latest works below, and I encourage you to visit [their site](https://www.obsidianfest.org/) and sign up to stream the rest.
 
 ## (title pending) | OTF '23
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/853457678?h=eec686f7fd" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/853457678?h=eec686f7fd" width="640" height="360" frameborder="0"    allowfullscreen><a href="https://vimeo.com/853457678">Watch on Vimeo</a></iframe>
 
 ## The Underground Color Wheel | OTF '23
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/853487989?h=b460a89466" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/853487989?h=b460a89466" width="640" height="360" frameborder="0"    allowfullscreen><a href="https://vimeo.com/853487989">Watch on Vimeo</a></iframe>

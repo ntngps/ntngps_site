@@ -33,7 +33,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
   <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="{{ '/atom.xml' | absolute_url }}">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="{{ site.title }}">
@@ -51,7 +51,6 @@
     ga('create', '{{ site.google_analytics_id }}', 'auto');
     ga('send', 'pageview');
   </script>
-  {% feed_meta %}
   {% seo %}
   {% endif %}
 </head>

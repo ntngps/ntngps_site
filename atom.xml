@@ -15,13 +15,19 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
+ {% assign img_prefix = 'src="' | append: site.url | append: '/' %}
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}"/>
+   <published>{{ post.date | date_to_xmlschema }}</published>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   {% assign post_folder = post.path | split: '_posts/' | last | split: '/' | first %}
+   {% if post_folder != post.name %}
+   <category term="{{ post_folder }}"/>
+   {% endif %}
+   <content type="html">{{ post.content | replace: 'src="/', img_prefix | xml_escape }}</content>
  </entry>
  {% endfor %}
 

@@ -5,7 +5,7 @@ tags: editor sound
 ---
 *editor, post-sound mixer*
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jm-1gogx1mU?si=LuZU-8-Dydv4oSKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jm-1gogx1mU?si=LuZU-8-Dydv4oSKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen><a href="https://www.youtube.com/watch?v=jm-1gogx1mU">Watch on YouTube</a></iframe>
 
 Filmmaker Juanita Anderson follows visual artist Sydney G. James, whose bold brush strokes in murals and large-scale paintings amplify the presence of Black women, Black families and Black culture in her hometown of Detroit.
 
