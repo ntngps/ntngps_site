@@ -3,22 +3,22 @@ layout: null
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us" xml:base="{{ site.url }}{{ site.baseurl }}/">
 
- <title>{{ site.title }}</title>
+ <title>{{ site.title | xml_escape }}</title>
  <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
  <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <updated>{{ site.posts.first.date | default: site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}{{ site.baseurl }}/</id>
  <author>
    <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
  </author>
 
  {% assign img_prefix = 'src="' | append: site.url | append: '/' %}
- {% for post in site.posts %}
+ {% assign href_prefix = 'href="' | append: site.url | append: '/' %}
+ {% for post in site.posts limit: 20 %}
  <entry>
-   <title>{{ post.title }}</title>
+   <title>{{ post.title | xml_escape }}</title>
    <link href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}"/>
    <published>{{ post.date | date_to_xmlschema }}</published>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
@@ -27,7 +27,26 @@ layout: null
    {% if post_folder != post.name %}
    <category term="{{ post_folder }}"/>
    {% endif %}
-   <content type="html">{{ post.content | replace: 'src="/', img_prefix | xml_escape }}</content>
+   {%- comment -%}
+     Move each iframe's fallback link ("Watch on YouTube") to just after the iframe,
+     so readers that strip iframes still show something to click.
+   {%- endcomment -%}
+   {%- assign html = '' -%}
+   {%- assign chunks = post.content | remove: '<!--more-->' | split: '</iframe>' -%}
+   {%- for chunk in chunks -%}
+     {%- assign iframe_body = chunk | split: '<iframe' | last -%}
+     {%- if chunk contains '<iframe' and iframe_body contains '<a ' -%}
+       {%- assign fallback = iframe_body | split: '<a ' | last | prepend: '<a ' -%}
+       {%- assign keep = chunk | size | minus: fallback.size -%}
+       {%- assign before = chunk | slice: 0, keep -%}
+       {%- assign html = html | append: before | append: '</iframe><p>' | append: fallback | append: '</p>' -%}
+     {%- elsif chunk contains '<iframe' -%}
+       {%- assign html = html | append: chunk | append: '</iframe>' -%}
+     {%- else -%}
+       {%- assign html = html | append: chunk -%}
+     {%- endif -%}
+   {%- endfor %}
+   <content type="html">{{ html | replace: 'src="/', img_prefix | replace: 'href="/', href_prefix | xml_escape }}</content>
  </entry>
  {% endfor %}
 
