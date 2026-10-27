@@ -1,1 +1,4 @@
-{}
+{
+  "showRibbon": true,
+  "textFontFamily": "IBM Plex Mono"
+}

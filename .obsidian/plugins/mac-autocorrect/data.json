@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "capitalize": true,
+  "doubleSpacePeriod": false,
+  "useTextReplacements": false,
+  "smartQuotes": true,
+  "engine": "auto",
+  "language": "",
+  "flash": true,
+  "ignoreWords": "",
+  "extraAbbreviations": "",
+  "_trMigrated": true
+}

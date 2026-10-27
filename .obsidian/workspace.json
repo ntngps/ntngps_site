@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "3bb8065c5f594cb3",
+        "id": "8b7b14e17e8c01e7",
         "type": "tabs",
         "children": [
           {
-            "id": "317bd90535de3a37",
+            "id": "c31f1f3d5a891b7d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "about.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "about"
-            }
-          },
-          {
-            "id": "0089f82c50ff3503",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.13.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.13.7"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,8 +184,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "0089f82c50ff3503",
+  "active": "724680bf987e35a4",
   "lastOpenFiles": [
-    "_posts/editing/2022-06-18-Made-A-Universe.md"
+    "_posts/words/2026-07-31-stop-listening.md",
+    "_posts/words/2026-06-02-link-example.md",
+    "_posts/words/2026-03-15-NYT-LLM-Prose.md",
+    "_posts/editing/2022-06-18-Made-A-Universe.md",
+    "about.md"
   ]
 }
