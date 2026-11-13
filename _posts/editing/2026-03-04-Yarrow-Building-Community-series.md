@@ -3,7 +3,7 @@ layout: post
 title: "Yarrow - Building/Community"
 tags: editor sound color
 excerpt_separator: <!--more-->
-date: 2026-07-08 17:00:00
+date: 2026-07-08 17:00:00 -0400
 ---
 
 *editor, colorist, post-sound mixer*
